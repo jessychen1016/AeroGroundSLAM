@@ -6,8 +6,8 @@ imu: 0
 num_of_cam: 2  
 
 imu_topic: "/dji_sdk/imu"
-image0_topic: "/AreoCameraFront/infra1/image_rect_raw"
-image1_topic: "/AreoCameraFront/infra2/image_rect_raw"
+image0_topic: "/AeroCameraDown/infra1/image_rect_raw"
+image1_topic: "/AeroCameraDown/infra2/image_rect_raw"
 output_path: "/home/dji/output/"
 
 cam0_calib: "left.yaml"

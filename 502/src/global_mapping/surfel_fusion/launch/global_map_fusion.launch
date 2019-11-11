@@ -35,8 +35,8 @@
     <param name="drift_free_poses" value="300" />
 
     <!-- for data save -->
-    <remap from="~image" to="/AreoCameraFront/infra1/image_rect_raw" />
-    <remap from="~depth" to="/AreoCameraFront/depth/image_rect_raw" />
+    <remap from="~image" to="/AeroCameraDown/infra1/image_rect_raw" />
+    <remap from="~depth" to="/AeroCameraDown/depth/image_rect_raw" />
     <remap from="~loop_path" to="/loop_fusion/pose_graph_path" />
     <remap from="~extrinsic_pose" to="/vins_estimator/extrinsic" />
   </node>
