@@ -10,8 +10,8 @@ image0_topic: "/AeroCameraDown/infra1/image_rect_raw"
 image1_topic: "/AeroCameraDown/infra2/image_rect_raw"
 output_path: "/home/dji/output/"
 
-cam0_calib: "left.yaml"
-cam1_calib: "right.yaml"
+cam0_calib: "DownLeft.yaml"
+cam1_calib: "DownRight.yaml"
 image_width: 640
 image_height: 480
    
