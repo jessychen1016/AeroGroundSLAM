@@ -83,9 +83,8 @@ void sync_process()
             {
                 double time0 = img0_buf.front()->header.stamp.toSec();
                 double time1 = img1_buf.front()->header.stamp.toSec();
-                ROS_WARN("timeforCam0=%lf", time0);
-                ROS_WARN("timeforCam1=%lf", time1);
-                time1=time0;
+                //ROS_WARN("timeforCam0=%lf", time0);
+                //ROS_WARN("timeforCam1=%lf", time1);
                 std::cout<<double(time1)<<std::endl;
                 if(time0 < time1)
                 {
@@ -107,7 +106,7 @@ void sync_process()
                     img0_buf.pop();
                     image1 = getImageFromMsg(img1_buf.front());
                     img1_buf.pop();
-                    printf("find img0 and img1\n");
+                    //printf("find img0 and img1\n");
                 }
             }
             m_buf.unlock();

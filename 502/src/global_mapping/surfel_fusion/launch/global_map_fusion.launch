@@ -6,10 +6,10 @@
     <param name="cam_height" value="480" />
 
     <!--input image info-->
-    <param name="cam_fx" value="385.27850341796875" />
-    <param name="cam_fy" value="385.27850341796875" />
-    <param name="cam_cx" value="319.3750915527344" />
-    <param name="cam_cy" value="241.12330627441406" />
+    <param name="cam_fx" value="389.6295636053912" />
+    <param name="cam_fy" value="389.5471658432442" />
+    <param name="cam_cx" value="322.9437002586174" />
+    <param name="cam_cy" value="246.2542755881273" />
 
     <param name="ric00" value="-4.9876902235101994e-03" />
     <param name="ric01" value="6.8975396706592029e-03" />
@@ -32,11 +32,11 @@
     <param name="fuse_near_distence" value="0.1" />
 
     <!-- for deform the map -->
-    <param name="drift_free_poses" value="300" />
+    <param name="drift_free_poses" value="3" />
 
     <!-- for data save -->
-    <remap from="~image" to="/AeroCameraDown/infra1/image_rect_raw" />
-    <remap from="~depth" to="/AeroCameraDown/depth/image_rect_raw" />
+    <remap from="~image" to="/AeroCameraFront/infra1/image_rect_raw" />
+    <remap from="~depth" to="/AeroCameraFront/depth/image_rect_raw" />
     <remap from="~loop_path" to="/loop_fusion/pose_graph_path" />
     <remap from="~extrinsic_pose" to="/vins_estimator/extrinsic" />
   </node>
