@@ -5,7 +5,7 @@ camera_name: camera
 image_width: 640
 image_height: 480
 distortion_parameters:
-   k1: -0.0002.566201693091796
+   k1: -0.0002566201693091796
    k2: -0.005457052846637
    p1: 0
    p2: 0

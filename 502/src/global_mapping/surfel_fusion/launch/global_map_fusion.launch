@@ -32,11 +32,13 @@
     <param name="fuse_near_distence" value="0.1" />
 
     <!-- for deform the map -->
-    <param name="drift_free_poses" value="3" />
+    <param name="drift_free_poses" value="100" />
 
     <!-- for data save -->
-    <remap from="~image" to="/AeroCameraFront/infra1/image_rect_raw" />
-    <remap from="~depth" to="/AeroCameraFront/depth/image_rect_raw" />
+    <!-- <remap from="~image" to="/AeroCameraDown/infra1/image_rect_raw" />
+    <remap from="~depth" to="/AeroCameraDown/depth/image_rect_raw" /> -->
+    <remap from="~image" to="/GroundCameraLeft/image_raw" />
+    <remap from="~depth" to="/depth" />
     <remap from="~loop_path" to="/loop_fusion/pose_graph_path" />
     <remap from="~extrinsic_pose" to="/vins_estimator/extrinsic" />
   </node>

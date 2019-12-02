@@ -17,25 +17,25 @@ image_height: 480
    
 
 # Extrinsic parameter between IMU and Camera.
-estimate_extrinsic: 1   # 0  Have an accurate extrinsic parameters. We will trust the following imu^R_cam, imu^T_cam, don't change it.
+estimate_extrinsic: 0   # 0  Have an accurate extrinsic parameters. We will trust the following imu^R_cam, imu^T_cam, don't change it.
                         # 1  Have an initial guess about extrinsic parameters. We will optimize around your initial guess.
 
 body_T_cam0: !!opencv-matrix
    rows: 4
    cols: 4
    dt: d
-   data: [ -4.9876902235101994e-03, 6.8975396706592029e-03,9.9996377279015758e-01, 7.5661288872482843e-02,
-           -9.9994520639236018e-01, -9.2379465278691342e-03,-4.9238762056141860e-03, -1.1023937355649450e-03,
-           9.2036492313802842e-03, -9.9993353993674983e-01, 6.9432377451592586e-03, 3.7679316555898373e-02, 
-           0, 0, 0, 1 ]
+   data: [-0.01681942,  0.99984429, -0.00533901,  0.0098612,
+           0.99970807,  0.01690928,  0.01725808,  0.15148488,
+           0.01734567, -0.00504718, -0.99983681, -0.08544314,
+           0,          0,          0,          1]
 body_T_cam1: !!opencv-matrix
    rows: 4
    cols: 4
    dt: d
-   data: [ -5.4579099636307138e-03, 9.9270446267020751e-03,9.9993583044303802e-01, 7.6697631756292572e-02,
-           -9.9994301906395133e-01, -9.2282764757631863e-03, -5.3663338096727742e-03, -5.0567591656427512e-02,
-            9.1744124661398141e-03, -9.9990814213019896e-01, 9.9768460765312650e-03, 3.7803643514866328e-02,
-            0, 0, 0, 1 ]
+   data: [-0.0167568011857556, 0.999842714686882, -0.00581013460317438, 0.00902188937753882,
+           0.999694815306127, 0.0168592449912898, 0.0180563674890959, 0.201594826440578,
+           0.0181514804112525, -0.00550579399200464, -0.999820085273383, -0.0845589874684984,
+           0, 0, 0, 1]
 
 center_T_imu: !!opencv-matrix
    rows: 4
